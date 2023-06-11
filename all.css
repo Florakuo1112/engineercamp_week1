@@ -52,9 +52,361 @@ body {
 }
 
 
+h4{
+    font-size: 48px;
+    font-weight: bold;
+    
+    }
+h5{
+        font-size: 32px;
+        font-weight: bold;
+    }
+
 .container{
-    width: 70%;
+    background-color: black;
+}
+
+
+.header{
+    max-width: 1296px;
     margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.headerIcon{
+    max-width: 188px;
+}
+
+.headTag {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    @media (max-width:786px){
+        display: none;
+    }
+    
+}
+
+
+
+
+.hambergerTag{
+    display: none;
+    color: white;
+    @media (max-width:786px){
+        display: block;
+    }
+
+}
+
+.hamberger .indexPrice h2{
+    font-size: 80px;
+}
+
+
+.headTag p{
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.headTag a{
+    text-decoration: none;
+}
+
+.cover{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    max-width: 1296px;
+    margin:auto;
+}
+.cover h1{
+color: white;
+font-size:120px;
+line-height: 1.2;
+font-weight: bold;
+@media (max-width:768px) {
+    font-size: 48px;
+}
+}
+.cover h4{
+    width: 50%;
+    font-size: 48px;
+    @media (max-width:768px) {
+        width: 80%;
+        font-size: 28px;
+    }
+}
+.startNow{
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid white;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.motion{
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width:786px){
+        justify-content: center;
+        margin-top: 258px;
+    }
+    
+}
+
+.motion img{
+    width:160px; 
+    @media (max-width:786px){
+        width: 33%;
+    }
+}
+
+.instruction{
+    max-width: 1296px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.ourService{
+    width: 33%;
+    margin-right: 24px
+};
+.serviceIns{
+    width: 66%;
+}
+
+
+.feature ul{
+    max-width: 1296px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.feature li{
+    max-width: 33.33%;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #F2F2F2;
+    border-radius: 16px;
+}
+.feature span{
+    font-size: 78px;
+    margin-bottom: 23px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+.feature h5{
+    margin-bottom: 20px;
+}
+.feature p{
+    line-height: 1.5;
+    color:#F2F2F2
+}
+
+.partnerShip{
+    max-width: 1296px;
+    margin:auto;
+    margin-bottom: 160px;
+    
+}
+
+.partnerShip h5{
+    color: white;
+    margin-bottom: 80px;
+    
+}
+
+.partnerShip img{
+    max-width: 160px;
+}
+
+.feedBack{
+    max-width: 1296px;
+    margin:auto;
+    margin-bottom: 160px;
+
+}
+
+.feedBack ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedBack li{
+    max-width: 26%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #272727;
+    border-radius: 16px;
+}
+.feedBack p{
+    color: #F2F2F2;
+    line-height: 1.5;
+    margin-top: 22px;
+}
+
+.feedBack span{
+    color: #F2F2F2;
+}
+
+.profile img{
+    width: 48px;
+}
+
+.profile {
+    display: flex;
+}
+.name{
+    margin-left: 16px;
+}
+.name p{
+    line-height: 1.5;
+    margin: 4px;
+}
+
+.AISection{
+    max-width: 100%;
+    border-radius: 160px;
+    background-color: white;
+    @media (max-width:768px){
+        border-radius: 16px;
+    }
+}
+
+
+
+.AIContainer{
+    max-width: 1296px;
+    margin:auto;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    @media (max-width:768px){
+        padding-top: 60px;
+    }
+}
+
+h2{
+    font-size: 80px;
+    font-weight:bold;
+    padding-bottom: 80px;
+    margin: auto;
+    display: inline-flex;
+    @media (max-width:768px){
+        display:block;
+        text-align:center;
+    }
+}
+
+.searchBar{
+    max-width: 1296px;
+    height: 64px;
+    margin-bottom: 44px;
+    background-color:#F2F2F2 ;
+    border-radius: 16px;
+    border-color:transparent;
+    color: #919191;
+    font-size: 16px;
+    line-height: 4;
+    display: flex;
+
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:768px){
+        display:none;
+    }
+ 
+}
+
+.filterForRWD{
+    display: none;
+    @media (max-width:768px){
+        display: block;
+    }
+}
+
+.filFunction {
+   border: 1px solid grey;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 20px;
+   padding-bottom:20px;
+   margin-bottom: 40px;
+   border-radius: 16px;
+   border-color: #F2F2F2;
+}
+
+.filFunction p{
+    font-size: 24px;
+}
+
+.filter ul li{
+   font-size: 24px;
+   color: #919191;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 16px;
+   padding-right: 16px;
+   border-radius: 16px;
+   border: 1px solid transparent;
+   vertical-align: middle;
+   margin-bottom: 40px;
+   line-height: 2;
+}
+
+.filter ul li:hover{
+    background-color: #F2F2F2;
+    color: black;
+}
+
+
+.newtoOld{
+    border: 1px solid grey;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    border-color: #F2F2F2;
+}
+
+.newtoOld p{
+    font-size: 24px;
 }
 
 ul{
@@ -62,15 +414,26 @@ ul{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+ul .ATTable{
+    @media (max-width:768px){
+        flex-wrap:wrap;
+        margin:auto;
+    }
+}
 
-.AI{
-    width: 416px;
+.AITable .AI{
+    width: 33%;
     margin-bottom: 24px;
+    border-radius: 160px;
+    @media (max-width:768px){
+        width: 100%;
+    }
 }
 
 img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 100%;
 }
 
 .card{
@@ -80,30 +443,23 @@ img{
 }
 
 
-h2{
-font-size: 20px;
-font-weight: bold;
-line-height: 24px;
-padding-top: 20px;
-padding-bottom: 12px;
-padding-left: 30px;
-padding-right: 30px;
 
-}
-
-h3{
+AIModel{
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
 }
-
-.description{
-    font-size: 14px;
-    line-height: 21px;
-    padding-bottom: 20px; 
+.desArea{
+    height: 42px;
+    padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
     border-bottom: 1px solid gainsboro;
+}
+.description{
+    font-size: 14px;
+    line-height: 21px;
+
   
 }
 
@@ -115,6 +471,7 @@ h3{
     border-bottom: 1px solid gainsboro;
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
 }
 
 .sub-card-two{
@@ -124,5 +481,347 @@ h3{
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
 }
 
+.pageTag{
+    display: flex;
+    justify-content: flex-end;
+   @media (max-width:768px){
+       justify-content: center;
+   }
+}
+.page{
+    font-size: 14px;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    margin: 4px;
+}
+
+.page:hover{
+    background-color: black;
+    color: white;
+}
+
+.callAction{
+max-width: 1296px;
+   padding-top: 158px;
+   padding-bottom: 158px;
+   border-bottom: 1px solid white;
+   margin: auto;
+}
+
+.callAction h2{
+    color: #ffffff;
+    margin: auto;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.startUse{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    font-size: 20px;
+}
+.startUse span{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+:hover{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.price{
+    margin: auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    @media (max-width:768px){
+        display: block;
+        
+    }
+}
+
+.indexPrice h2{
+    font-size: 80px;
+    display: block;
+    @media (max-width:768px){
+        text-align:left;
+        font-size: 48px;
+        
+    }
+}
+
+.price h2{
+    color: white;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.price .headerIcon{
+    @media (max-width:768px){
+        display:none;
+        
+    }
+}
+
+.headerIconRWD{
+    display: none;
+    @media (max-width:768px){
+        display:block;
+        width: 80%;
+        margin-bottom:40px
+        
+    }
+}
+
+.footer{
+    margin: auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+.footerLeft{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width:786px){
+        width: 50%;
+    }
+}
+.footerLeft ul{
+    width: 60%;
+}
+.footer p{
+    color: white;
+    font-size: 16px;
+}
+
+.socialMedia{
+    @media(max-width:786px){
+        display: none;
+    }
+}
+
+.socialMediaRWD{
+    display: none;
+    @media(max-width:786px){
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        padding-left:12px
+    }
+}
+
+/* page2 */
+.priceList{
+    margin: auto;
+    max-width: 1296px;
+    margin-bottom: 160px;
+}
+
+.priceList ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.priceList li{
+    width: 48%;
+    border: 1px solid #919191;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    @media (max-width:768px){
+        width: 100%;
+    }
+}
+
+.priceList li:hover{
+    border: 1px solid #F2F2F2;
+}
+
+
+.priceList h5{
+    margin-bottom: 12px;
+    font-size: 32px;
+    margin-bottom: 80px;
+    @media (max-width:768px){
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 22px;
+    }
+}
+
+.pricelist p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+.priceListContent{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.teachers{
+    border-bottom: 1px solid #919191;
+    height: 200px;}
+.teachers h5{
+    margin-left: 32px;
+}
+
+.teachers p{
+    margin-bottom: 4px;
+    font-weight: normal;
+    color: #F2F2F2;
+}
+
+
+.priceDetails{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.priceDetails p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.priceDetails span{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 14.5px;
+}
+
+.rule{
+    margin: auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    @media (max-width:768px){
+        display: block;
+    }
+}
+
+.rule h5{
+    @media (max-width:768px){
+        margin-bottom: 48px;
+        padding-left:12px;
+        font-size: 20px;
+    }
+}
+
+.ruleFeature{
+    width: 60%;
+    @media (max-width:768px){
+        width:100%;
+    }
+}
+
+.rule ul{
+    @media (max-width:768px){
+        padding-left:12px;
+        paddinf-right:12px;
+    }
+}
+
+.ruleFeature li{
+    padding-bottom: 28px;
+    border-bottom: 1px solid #919191;
+}
+
+.ruleFeature h4{
+    font-size: 48px;
+    @media (max-width:768px){
+        font-size: 32px;
+    }
+
+}
+
+.ruleFeature li h5{
+    font-size: 32px;
+    @media (max-width:768px){
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 0px;
+    }
+}
+
+.faq{
+    margin: auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:768px){
+        display: block;
+    }
+
+}
+
+.faq h5{
+    font-size: 32px;
+    @media (max-width:768px){
+        font-size: 20px;
+        margin-bottom: 22px;
+        padding-left: 12px;
+    }
+}
+
+.faqList{
+    width: 60%;
+    @media (max-width:768px){
+        width: 100%;
+    }
+
+}
+
+.faq li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.faq ul{
+    display:block;
+    @media (max-width:768px){
+        padding-left:12px;
+        padding-right: 12px;
+    }
+
+}
+
+.faq p{
+    font-size: 20px;
+    line-height: 1.5;;
+}

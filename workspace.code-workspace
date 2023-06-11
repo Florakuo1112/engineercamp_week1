@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../project/工程師體驗營"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "第一週作業"
+	}
+}
