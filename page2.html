@@ -21,44 +21,46 @@
 
 </head>
 <body style="background-color:black">
-<div class="container">
-<div class="header">
-    <div class="headerIcon">
-        <a href="#">
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="">
-        </a>
-    </div>
-        <ul class="headTag" style="width:10%">
-            <li ><a href="./index.html"><p >首頁</p></a></li>
-            <li><a  href="./page2.html"><p>定價</p></a></li>
-        </ul>
-
-    <div class="hambergerTag">
-        <div class="hamberger"> 
-        <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><span class="material-symbols-outlined" style="color: white;">
-                density_medium
-                </span></a>
-        </div>   
-        
-        
-              <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <!-- <div class="card card-body">
-                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div> -->
-                <div class="indexPrice">
-                    <h2  style="font-weight: bold;">首頁</h2>
-                    <h2 style="font-weight: bold;">定價</h2>
+    <div class="container">
+        <div class="header" style="background-color: black">
+            <div class="headerIcon">
+                <a href="#">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="">
+                </a>
+            </div>
+    
+                <ul class="headTag d-flex justify-content-between;" style="width: 10%;">
+                    <li ><a href="./index.html"><p >首頁</p></a></li>
+                    <li><a  href="./page2.html"><p>定價</p></a></li>
+                </ul>
+    
+    
+                <div class="hamberger">
+                  <nav class="navbar navbar-dark" style="background-color: black">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                  </nav>
+    
+    
                 </div>
               </div>
-  
-    </div>
-</div>
+        </div>
+    
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div style="background-color: black; font-size: 80px; text-align: center;">
+              <a href="./index.html" class="text-white" style="font-size: 80px; display: block; text-decoration: none;">首頁</a>
+              <a href="./page2.html" style="font-size: 80px; display: block;text-decoration: none"><span class="text-white">定價</span></a>
+            </div>
+          </div>
 <div class="cover">
-    <h1 class="display-1">用多少， <br>
+    <h1>用多少， <br>
         付多少。
     </h1>
     <br></br>
-    <div class="d-flex justify-content-end; margin-bottom:160px; md: d-flex justify-content-center">
+    <div class="margin-bottom:160px d-flex justify-content-end">
     <h4 style=" font-weight: bold;">我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。</h4>
     </div>
     <div class="motion" style="justify-content: flex-start;">
@@ -72,7 +74,7 @@
 
 
 <div class="priceList">
-    <h5>定價</h5>
+    <h5 class="fs-1 md:fs-4">定價</h5>
     <ul>
         <li>
             <div class="priceListContent">
@@ -160,7 +162,7 @@
 </div>
 
 <div class="rule">
-    <div><h5 style="font-size: 32px;">使用規範</h5></div>
+    <div><h5 class="fs-1 md:fs-4">使用規範</h5></div>
     <div class="ruleFeature">
         <ul>
             <li><h4  style="font-weight:bold">守法</h4>
@@ -280,7 +282,7 @@
 <!-- 使用bs5做collapes  -->
 
 <div class="faq" style="margin-top: 160px; margin-bottom: 160px;">
-    <div><h5 style="font-size: 32px;">常見問題</h5></div>
+    <div><h5 class="fs-1 md:fs-4">常見問題</h5></div>
     <div class="faqList">
         <ul>
             <li>
@@ -292,13 +294,13 @@
                     </span>
             </div>
             <p>
-                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
+                <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
                     如何選擇適合的AI模型？
                 </a>
               </p>
             </div>
 
-              <div class="collapse" id="collapseExample" ">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
                 <div class="card card-body pt-2" style="background-color: transparent">
                     <p>選擇適合的AI模型需要考慮您的應用場景、需要解決的問題、可用的資源以及預算等因素。可以通過對比不同模型的性能、準確度、速度等指標，以及與其他用戶的評價與反饋，來選擇最適合的模型。</p>
                 </div>
@@ -314,13 +316,13 @@
                             </span>
                     </div>
                 <p>
-                    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
+                    <a data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
                         租用模型的費用是如何計算的？
                     </a>
                   </p>
                 </div>
     
-                  <div class="collapse" id="collapseExample" ">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
                     <div class="card card-body pt-2" style="background-color: transparent">
                         <p>租用模型的費用通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的性能可以根據其精度、速度，占用資源等指標來評估；而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動計算出對應的租用費用。</p>
                     </div>
@@ -336,13 +338,13 @@
                                 </span>
                         </div>
                     <p>
-                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
+                        <a data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
                             如何進行付款？
                         </a>
                       </p>
                     </div>
         
-                      <div class="collapse" id="collapseExample" ">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
                         <div class="card card-body pt-2" style="background-color: transparent">
                             <p>付款方式可以通過網站上提供的線上支付平臺進行支付。具體而言，您可以選擇使用信用卡、銀行轉帳、電子錢包等不同的支付方式進行支付。在支付前，您需要先登錄網站並選擇適合的租用方案，系統會自動計算出對應的租用費用與支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。</p>
                         </div>
@@ -358,13 +360,13 @@
                                 </span>
                         </div>
                     <p>
-                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
+                        <a data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
                             租用模型的期限是多久？
                         </a>
                       </p>
                     </div>
         
-                      <div class="collapse" id="collapseExample" ">
+                      <div class="collapse" id="multiCollapseExample4" >
                         <div class="card card-body pt-2" style="background-color: transparent">
                             <p>租用型的期限可以根據您的需求進行設置，通常可以選擇幾個小時、幾天或幾個月等不同的時間段。</p>
                         </div>
@@ -380,13 +382,13 @@
                                 </span>
                         </div>
                     <p>
-                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
+                        <a data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="color:white; text-decoration: none;">
                             如果在使用過程中遇到問題，應該怎麼處理？
                         </a>
                       </p>
                     </div>
         
-                      <div class="collapse" id="collapseExample" ">
+                      <div class="collapse" id="multiCollapseExample5">
                         <div class="card card-body pt-2" style="background-color: transparent">
                             <p>如果在使用過程中遇到問題，您可以聯繫客服或寄宿人員進行諮詢或報告問題。您也可以通過網站上的幫助中心或社區論壇尋找相關的解決方案和回答。</p>
                         </div>

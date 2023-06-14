@@ -75,6 +75,9 @@ h5{
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
+    @media(max-width:786px){
+        max-width:100%
+    }
 }
 
 .headerIcon{
@@ -82,21 +85,24 @@ h5{
 }
 
 .headTag {
-    display: flex;
-    justify-content: space-between;
     padding-left: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    @media (max-width:786px){
-        display: none;
-    }
-    
+    font-size: 16px;
+
 }
 
 
+.headTag a{
+    text-decoration: none;
+    color: white;
+    @media (max-width:786px) {
+        display: none;
+        
+    }
+}
 
-
-.hambergerTag{
+.hamberger{
     display: none;
     color: white;
     @media (max-width:786px){
@@ -105,27 +111,17 @@ h5{
 
 }
 
-.hamberger .indexPrice h2{
-    font-size: 80px;
-}
-
-
-.headTag p{
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
-    text-decoration: none;
-}
-
-.headTag a{
-    text-decoration: none;
-}
-
 .cover{
+    max-width: 1296px;
+    margin:auto;
     padding-top: 20px;
     padding-bottom: 80px;
     max-width: 1296px;
-    margin:auto;
+    @media (max-width:786px) {
+        max-width:90%
+        
+    }
+    
 }
 .cover h1{
 color: white;
@@ -139,13 +135,15 @@ font-weight: bold;
 .cover h4{
     width: 50%;
     font-size: 48px;
+    display: flex;
+    justify-content: end;
     @media (max-width:768px) {
         width: 80%;
         font-size: 28px;
     }
 }
 .startNow{
-    width: 100px;
+    width: 200px;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -183,15 +181,41 @@ font-weight: bold;
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+    @media (max-width:786px){
+        display: block;
+        justify-content: center;
+        padding-left:8px;
+        padding-right:8px;
+    }
 }
 .ourService{
     width: 33%;
-    margin-right: 24px
+    margin-right: 24px;
+    font-size: 32px;
+    @media (max-width:786px) {
+        font-size: 20px;
+        
+    }
 };
-.serviceIns{
-    width: 66%;
-}
 
+
+.serviceIns{
+   width: 66%;
+    font-size: 48px;
+    line-height: 1.2;
+    @media (max-width:786px) {
+        font-size: 32px;
+        
+    }
+
+
+}
+.serviceIns p{
+    font-size: 48px;
+    @media (max-width:786px){
+        font-size: 32px;
+    }
+}
 
 .feature ul{
     max-width: 1296px;
@@ -199,6 +223,12 @@ font-weight: bold;
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
+    padding-left: 8px;
+    padding-right: 8px;
+    @media (max-width:786px) {
+        display: block;
+        
+    }
 }
 
 .feature li{
@@ -210,6 +240,10 @@ font-weight: bold;
     padding-right: 32px;
     border: 1px solid #F2F2F2;
     border-radius: 16px;
+    @media (max-width:786px) {
+        max-width:100%;
+        
+    }
 }
 .feature span{
     font-size: 78px;
@@ -254,6 +288,10 @@ font-weight: bold;
     max-width: 1296px;
     margin:auto;
     margin-bottom: 160px;
+    @media (max-width:786px) {
+        display: none;
+        
+    }
 
 }
 
@@ -295,6 +333,31 @@ font-weight: bold;
     line-height: 1.5;
     margin: 4px;
 }
+
+.feedbackRWD{
+    display: none;
+    @media (max-width:786px){
+        display: block;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+       
+    }
+
+}
+.carousel-inner{
+    max-width: 100%;
+    padding: 20px;
+    background-color: #272727;
+    font-weight: normal;
+    border-radius: 16px;
+}
+
+.stars{
+    margin-bottom: 10px;
+}
+
 
 .AISection{
     max-width: 100%;
@@ -507,6 +570,7 @@ AIModel{
 .page:hover{
     background-color: black;
     color: white;
+    font-weight: bolder;
 }
 
 .callAction{
@@ -534,9 +598,8 @@ max-width: 1296px;
     margin-bottom: 40px;
     border-radius: 16px;
     border: 1px solid white;
-    color: white;
     text-align: center;
-    width: 100px;
+    width: 200px;
     margin: auto;
     font-size: 20px;
 }
@@ -583,7 +646,7 @@ max-width: 1296px;
 
 .price .headerIcon{
     @media (max-width:768px){
-        display:none;
+        display:none  ;
         
     }
 }
@@ -619,8 +682,19 @@ max-width: 1296px;
     width: 60%;
 }
 .footer p{
-    color: white;
     font-size: 16px;
+}
+
+.footerLeft a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+.footerRight a{
+    color:white;
+    text-decoration: none;
 }
 
 .socialMedia{
@@ -786,9 +860,7 @@ max-width: 1296px;
 }
 
 .faq h5{
-    font-size: 32px;
     @media (max-width:768px){
-        font-size: 20px;
         margin-bottom: 22px;
         padding-left: 12px;
     }
@@ -825,3 +897,4 @@ max-width: 1296px;
     font-size: 20px;
     line-height: 1.5;;
 }
+
